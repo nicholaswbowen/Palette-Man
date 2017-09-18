@@ -1,0 +1,102 @@
+$icon-font-path: "../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/" ;
+
+@import './variables.scss';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+.color-swatch-box{
+    border: 0.5px outset $gray-lighter;
+    border-radius: 5px;
+    .panel-body:hover{
+        border: 0.5px solid $gray-darker;
+    }
+    .panel-body{
+        padding-top: 0px !important;
+        height: 100%;
+        .color-section {
+            height: 80%;
+        }
+        .name-section{
+            height: 20%;
+        }
+    }
+    .panel-content{
+        height: 100%;
+    }
+    .panel-text{
+        padding: 5px
+    }
+}
+
+.site-navbar{
+    height: 64px;
+    .navbar-header{
+        height: 62px;
+    }
+    .navbar-brand{
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    .navbar-form{
+        margin-top: 9.5px;
+        margin-right: 20px;
+    }
+}
+.site-content {
+    min-height: 500px;
+}
+
+.site-sidebar {
+    background-color: $gray-lighter;
+    .random-button{
+        margin: 10px;
+    }   
+}
+.glyphicon{
+    color: $gray-darker;
+}
+.carousel-control.left, .carousel-control.right {
+    width: 9%;
+    background-image: none;
+    .glyphicon{
+        color: $gray-darker;
+    }
+}
+
+.clear-button{
+    font-size: 2.0em;
+}
+
+.big-swatch{
+    @media (max-width: $screen-sm) and (min-width: 0px) {
+        height: 250px;
+    }
+    @media (min-width: $screen-sm) {
+        height: 250px;
+  }
+}
+#search-suggestions{
+    margin-top: 0;
+    .arrow{
+        display: none;
+    }
+}
+
+.color-panel{
+    display: inline-block;
+    width: 100%;
+
+    .color-name{
+        display: inline-block; 
+        width: 90%;
+        font-size: 1.3em;
+    }
+    .tiny-swatch{
+        width: 10%;
+        height: 15px;
+        display: inline-block;
+        border: 1px solid $gray-darker;
+    }
+    .panel-body:hover{
+        box-shadow: 0.35px 0.35px 0.35px 0.35px $gray-darker;
+    }
+}
