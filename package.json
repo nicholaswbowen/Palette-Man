@@ -59,7 +59,7 @@
     "test": "node client/scripts/test.js --env=jsdom",
     "startserver": "node server/main.js",
     "startdevserver": "nodemon server/main.js",
-    "start": "npm run build && npm run startserver",
+    "start": "npm run startserver",
     "seed": "node server/seed/seedDatabase.js"
   },
   "jest": {

@@ -14,9 +14,13 @@ PORT=9001 //defaults to 3001 if unspecifed make sure to change your 'proxy' fiel
 ```js
 npm install
 npm run dev
-npm run seed (optional) //this will seed your database with the X11 color set, plus additional random hex colors, with an end result of 4096 unique colors. If you prefer to use your own set, seed the data however you see fit. Just make sure to follow the schema in server/models
-npm start (runs production)
+npm run seed (optional) //this will seed your database with the X11 color set, plus additional 
+//random hex colors, with an end result of 4096 unique colors. If you prefer to use your own set,
+// seed the data however you see fit. Just make sure to follow the schema in server/models
+npm run build (builds production client)
+npm start (runs production, run build first)
 ```
 
 ## Curent Mood  
+
 ᕦ( ̿ ﹏ ̿ )ᕤ
