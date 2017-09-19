@@ -15,6 +15,7 @@ mongoose.connect(process.env.MONGO_URI)
     })
 
 if (process.env.production === 'true'){
+    console.log('prod = true')
     const BUILD_DIR = path.resolve(__dirname, "../client/build");
 
     app.use(express.static(BUILD_DIR));
