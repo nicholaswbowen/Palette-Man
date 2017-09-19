@@ -53,7 +53,6 @@ function seedScript(){
     finalColors.forEach( (color) => {
         hexColor.create({x11Name: color.name || null, hex: color.hex})
             .then((result) => {
-                mongoose.disconnect();
                 console.log(`seeded document with _id:${result._id}`)
             })
             .catch((err) => {
