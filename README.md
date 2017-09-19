@@ -1,7 +1,6 @@
 # Palette Man
 Palette man is a MERN app that provides you with a list of colors from a database, as well as creates shades and tints based on those colors.
 
-![alt text](./screenShots/list-view.png "Logo Title Text 1")
 
 ## Getting Started
 
