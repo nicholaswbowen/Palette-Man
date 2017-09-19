@@ -33,17 +33,3 @@ export class SideBar extends Component {
         
     }
 }
-
-// class ColorPanel extends Component{
-//     render(){
-//         return(<Col xs={6} md={12}>
-//             <Panel key={this.props.color} name={this.props.color} onClick={this.handleClick.bind(this)}>
-//                 <div className='color-name text-center'>{this.props.color}</div>
-//                 <div className='tiny-swatch text-right' style={{backgroundColor: this.props.color}}></div>
-//             </Panel>
-//         </Col>)
-//     }
-//     handleClick(e){
-//         this.props.selectColor(this.props.color)
-//     }
-// }

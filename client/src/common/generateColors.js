@@ -23,13 +23,13 @@ function generateScaleOfColors(colorStart, colorEnd, scaleEnd){
     
 }
 export function generateScaledColorsList(colorStart, colorEnd, arraySize){
-    let colorList = Array(arraySize).fill(0);
+    let result = [];
     let colorScale = generateScaleOfColors(colorStart, colorEnd, arraySize);
-
-    return colorList.map((element, index) => {
-        let color = rgb2hex(colorScale(index));
-        return color;
-    })
+    for (let i = 0; i < arraySize; i++){
+        let color = rgb2hex(colorScale(i));
+        result.push(color);
+    }
+    return result;
 }
 
 

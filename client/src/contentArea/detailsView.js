@@ -23,7 +23,9 @@ export class DetailsView extends Component {
             <Col xs={10} md={6} mdOffset={3} xsOffset={1} className='big-swatch'>    
                 <ColorSwatch swatchHeight='100%' color={this.props.selectedColor} selectColor={this.props.selectColor}/>         
             </Col>
+            
             <Col xs={12}>
+                <br />
                 <div className='text-center'>Tints of {this.props.selectedColor}</div>
                 <ScaleCarosuel scaleStart={this.props.selectedColor} scaleEnd={'#fff'} selectColor={this.props.selectColor}/>
                 <br />
