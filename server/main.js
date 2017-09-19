@@ -26,4 +26,4 @@ if (process.env.production === 'true'){
 
 
 app.use('/api', colorsAPI);
-app.listen(process.env.port || 3001);
+app.listen(process.env.PORT || 3001);
